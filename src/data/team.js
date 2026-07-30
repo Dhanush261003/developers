@@ -1,3 +1,5 @@
+import dhanushImg from "../assets/images/dhanush.png";
+
 export const team = [
   {
     id: 'member-1',
@@ -21,12 +23,12 @@ export const team = [
   },
   {
     id: 'member-3',
-    name: 'Rahul Nair',
-    role: 'WordPress & SEO Specialist',
+    name: 'Dhanush S',
+    role: 'Web Developer | SEO Specialist | Graphic Designer',
     bio: 'Builds and optimizes WordPress sites for speed and search visibility, and manages ongoing client maintenance plans.',
     skills: ['WordPress', 'Elementor', 'SEO', 'Performance'],
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
-    initials: 'RN',
+    linkedin: 'https://www.linkedin.com/in/dhanu-sh/',
+    github: 'https://github.com/Dhanush261003',
+    img: dhanushImg,
   },
 ];

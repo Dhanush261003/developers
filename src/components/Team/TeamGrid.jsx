@@ -4,6 +4,7 @@ import Reveal from '../Common/Reveal';
 import SectionHeading from '../Common/SectionHeading';
 import './Team.css';
 
+
 export default function TeamGrid({ withHeading = true }) {
   return (
     <section className="section">
@@ -23,7 +24,7 @@ export default function TeamGrid({ withHeading = true }) {
             <Reveal key={member.id} delay={i * 0.1}>
               <div className="team-card card">
                 <div className="team-photo">
-                  <span>{member.initials}</span>
+                  <img src={member.img} alt={member.name} />
                 </div>
                 <h3 className="team-name">{member.name}</h3>
                 <p className="team-role">{member.role}</p>
