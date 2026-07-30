@@ -1,4 +1,6 @@
 import dhanushImg from "../assets/images/dhanush.png";
+import pryaImg from "../assets/images/prya.png";
+import yugaprasadImg from "../assets/images/yugaprasad.png";
 
 export const team = [
   {
@@ -9,7 +11,7 @@ export const team = [
     skills: ['React', 'Node.js', 'MongoDB', 'System Design'],
     linkedin: 'https://linkedin.com',
     github: 'https://github.com',
-    initials: 'AD',
+    img: pryaImg,
   },
   {
     id: 'member-2',
@@ -19,7 +21,7 @@ export const team = [
     skills: ['Figma', 'React', 'Framer Motion', 'Design Systems'],
     linkedin: 'https://linkedin.com',
     github: 'https://github.com',
-    initials: 'MK',
+    img: yugaprasadImg,
   },
   {
     id: 'member-3',
