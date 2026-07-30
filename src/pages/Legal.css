@@ -1,0 +1,14 @@
+.legal-content {
+  max-width: 760px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.legal-content h3 {
+  font-family: var(--font-display);
+  color: var(--text);
+  font-size: 1.2rem;
+  margin: 32px 0 12px;
+}
+
+.legal-content p { margin-bottom: 8px; }

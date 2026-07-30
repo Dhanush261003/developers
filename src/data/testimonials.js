@@ -1,0 +1,38 @@
+export const testimonials = [
+  {
+    id: 't1',
+    name: 'Priya Sharma',
+    company: 'Global Placement Centre',
+    role: 'Operations Director',
+    rating: 5,
+    text: 'The team rebuilt our recruitment site from the ground up. It loads faster, ranks better, and our team can update it ourselves without touching code.',
+    initials: 'PS',
+  },
+  {
+    id: 't2',
+    name: 'Nikos Andreou',
+    company: 'Hydro Nikos',
+    role: 'Managing Director',
+    rating: 5,
+    text: 'Clear communication from day one and a website that actually reflects the quality of our pool installations. Maintenance has been effortless since launch.',
+    initials: 'NA',
+  },
+  {
+    id: 't3',
+    name: 'Suresh Iyer',
+    company: 'Trueline Management Services',
+    role: 'Managing Consultant',
+    rating: 5,
+    text: 'They understood our consulting brand immediately and delivered a polished, professional site well ahead of schedule.',
+    initials: 'SI',
+  },
+  {
+    id: 't4',
+    name: 'Kavya Menon',
+    company: 'Retail Startup',
+    role: 'Founder',
+    rating: 5,
+    text: 'Our landing page conversion rate improved noticeably after the redesign. Genuinely thoughtful, detail-oriented work.',
+    initials: 'KM',
+  },
+];

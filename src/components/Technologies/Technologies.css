@@ -1,0 +1,26 @@
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 18px;
+}
+
+.tech-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 26px 12px;
+  text-align: center;
+}
+
+.tech-chip svg { color: var(--accent-2); }
+
+.tech-chip span { font-size: 0.82rem; color: var(--text-secondary); }
+
+@media (max-width: 980px) {
+  .tech-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .tech-grid { grid-template-columns: repeat(3, 1fr); }
+}

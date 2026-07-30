@@ -1,0 +1,18 @@
+export const technologies = [
+  { id: 'react', name: 'React', icon: 'SiReact' },
+  { id: 'nextjs', name: 'Next.js', icon: 'SiNextdotjs' },
+  { id: 'javascript', name: 'JavaScript', icon: 'SiJavascript' },
+  { id: 'typescript', name: 'TypeScript', icon: 'SiTypescript' },
+  { id: 'nodejs', name: 'Node.js', icon: 'SiNodedotjs' },
+  { id: 'express', name: 'Express', icon: 'SiExpress' },
+  { id: 'mongodb', name: 'MongoDB', icon: 'SiMongodb' },
+  { id: 'firebase', name: 'Firebase', icon: 'SiFirebase' },
+  { id: 'wordpress', name: 'WordPress', icon: 'SiWordpress' },
+  { id: 'framer', name: 'Framer', icon: 'SiFramer' },
+  { id: 'tailwind', name: 'Tailwind CSS', icon: 'SiTailwindcss' },
+  { id: 'gsap', name: 'GSAP', icon: 'SiGreensock' },
+  { id: 'framermotion', name: 'Framer Motion', icon: 'SiFramer' },
+  { id: 'github', name: 'GitHub', icon: 'SiGithub' },
+  { id: 'vercel', name: 'Vercel', icon: 'SiVercel' },
+  { id: 'hostinger', name: 'Hostinger', icon: 'SiHostinger' },
+];

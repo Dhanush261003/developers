@@ -1,0 +1,56 @@
+.services-preview { position: relative; }
+
+.services-glow {
+  width: 500px;
+  height: 500px;
+  top: 100px;
+  right: -200px;
+  opacity: 0.4;
+}
+
+.service-card {
+  padding: 36px 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  background: rgba(59,130,246,0.1);
+  border: 1px solid rgba(59,130,246,0.25);
+  color: var(--accent-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.service-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-short {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 22px;
+}
+
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent-2);
+}
+
+.services-preview-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+}

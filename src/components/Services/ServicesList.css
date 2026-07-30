@@ -1,0 +1,93 @@
+.service-row {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 64px;
+  align-items: center;
+  padding: 56px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.service-row:first-child { padding-top: 0; }
+.service-row:last-child { border-bottom: none; }
+
+.service-row.reverse { direction: rtl; }
+.service-row.reverse > * { direction: ltr; }
+
+.service-row-visual {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(59,130,246,0.08), rgba(6,182,212,0.04));
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.service-visual-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(148,163,184,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148,163,184,0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(circle at center, #000 30%, transparent 75%);
+}
+
+.service-visual-icon {
+  position: relative;
+  z-index: 2;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--gradient-accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-glow);
+}
+
+.service-row-title {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 14px 0 14px;
+}
+
+.service-row-desc {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.service-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.service-benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.service-benefits svg { color: var(--accent-2); margin-top: 3px; flex-shrink: 0; }
+
+.service-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 900px) {
+  .service-row, .service-row.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 28px;
+  }
+}

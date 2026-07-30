@@ -1,0 +1,31 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--gradient-accent);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 6px 18px rgba(59,130,246,0.35);
+}
+
+.logo-bracket { color: rgba(255,255,255,0.85); }
+.logo-slash { color: #fff; }
+
+@media (max-width: 480px) {
+  .logo-word { display: none; }
+}

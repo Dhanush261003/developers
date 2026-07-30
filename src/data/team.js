@@ -1,0 +1,32 @@
+export const team = [
+  {
+    id: 'member-1',
+    name: 'Arjun Dev',
+    role: 'Founder & Full Stack Developer',
+    bio: 'Leads architecture and full-stack builds across React and WordPress, translating client requirements into scalable technical plans.',
+    skills: ['React', 'Node.js', 'MongoDB', 'System Design'],
+    linkedin: 'https://linkedin.com',
+    github: 'https://github.com',
+    initials: 'AD',
+  },
+  {
+    id: 'member-2',
+    name: 'Meera Kannan',
+    role: 'UI/UX Designer & Frontend Developer',
+    bio: 'Designs interfaces end-to-end — from wireframes to production-ready React components — with a focus on clarity and motion.',
+    skills: ['Figma', 'React', 'Framer Motion', 'Design Systems'],
+    linkedin: 'https://linkedin.com',
+    github: 'https://github.com',
+    initials: 'MK',
+  },
+  {
+    id: 'member-3',
+    name: 'Rahul Nair',
+    role: 'WordPress & SEO Specialist',
+    bio: 'Builds and optimizes WordPress sites for speed and search visibility, and manages ongoing client maintenance plans.',
+    skills: ['WordPress', 'Elementor', 'SEO', 'Performance'],
+    linkedin: 'https://linkedin.com',
+    github: 'https://github.com',
+    initials: 'RN',
+  },
+];
