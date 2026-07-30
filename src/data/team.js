@@ -1,7 +1,7 @@
 export const team = [
   {
     id: 'member-1',
-    name: 'Arjun Dev',
+    name: 'Pryadharshini',
     role: 'Founder & Full Stack Developer',
     bio: 'Leads architecture and full-stack builds across React and WordPress, translating client requirements into scalable technical plans.',
     skills: ['React', 'Node.js', 'MongoDB', 'System Design'],
