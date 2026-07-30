@@ -11,7 +11,7 @@ export const team = [
   },
   {
     id: 'member-2',
-    name: 'Meera Kannan',
+    name: 'yugaprasad',
     role: 'UI/UX Designer & Frontend Developer',
     bio: 'Designs interfaces end-to-end — from wireframes to production-ready React components — with a focus on clarity and motion.',
     skills: ['Figma', 'React', 'Framer Motion', 'Design Systems'],
