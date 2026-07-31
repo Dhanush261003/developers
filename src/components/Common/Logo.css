@@ -27,5 +27,5 @@
 .logo-slash { color: #fff; }
 
 @media (max-width: 480px) {
-  .logo-word { display: none; }
+  /* .logo-word { display: none; } */
 }

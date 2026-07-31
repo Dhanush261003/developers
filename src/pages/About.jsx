@@ -10,7 +10,7 @@ import { useSEO } from '../hooks/useSEO';
 export default function About() {
   useSEO({
     title: 'About Us',
-    description: 'Meet Developers — a 3-person web development studio building React, WordPress and Framer websites since 2022.',
+    description: 'Meet Developers — a 3-person web development studio building React, WordPress and Framer websites since 2026.',
   });
 
   return (
