@@ -16,9 +16,9 @@ export const company = {
 };
 
 export const stats = [
-  { id: 's1', label: 'Projects Delivered', value: 25, suffix: '+' },
-  { id: 's2', label: 'Happy Clients', value: 18, suffix: '+' },
-  { id: 's3', label: 'Years Combined Experience', value: 5, suffix: '+' },
+  { id: 's1', label: 'Projects Delivered', value: 5, suffix: '+' },
+  { id: 's2', label: 'Happy Clients', value: 10, suffix: '+' },
+  { id: 's3', label: 'Years Combined Experience', value: 1, suffix: '+' },
   { id: 's4', label: 'Avg. Lighthouse Score', value: 95, suffix: '' },
 ];
 

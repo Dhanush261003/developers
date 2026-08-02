@@ -28,13 +28,40 @@ export default function ContactForm() {
     if (errors[name]) setErrors((er) => ({ ...er, [name]: undefined }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     const nextErrors = validate(form);
     setErrors(nextErrors);
-    if (Object.keys(nextErrors).length === 0) {
+
+    if (Object.keys(nextErrors).length > 0) {
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/contacts`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(form),
+        }
+      );
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Failed to send message");
+      }
+
       setSubmitted(true);
       setForm(initialForm);
+
+    } catch (error) {
+      console.error("Contact form error:", error);
+      alert("Unable to send message. Please try again.");
     }
   };
 
@@ -95,7 +122,7 @@ export default function ContactForm() {
               type="tel"
               value={form.phone}
               onChange={handleChange}
-              placeholder="+91 98765 43210"
+              placeholder="+91 98765 XXXXX"
             />
           </div>
 

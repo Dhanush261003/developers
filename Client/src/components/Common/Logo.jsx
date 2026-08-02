@@ -9,7 +9,7 @@ export default function Logo({ onClick }) {
         <span className="logo-slash">/</span>
         <span className="logo-bracket">&gt;</span>
       </span>
-      <span className="logo-word">Developers</span>
+      <span className="logo-word">3 Developers</span>
     </Link>
   );
 }
