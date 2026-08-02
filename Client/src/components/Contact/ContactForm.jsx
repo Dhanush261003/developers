@@ -29,38 +29,41 @@ export default function ContactForm() {
   };
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const nextErrors = validate(form);
-  setErrors(nextErrors);
+    const nextErrors = validate(form);
+    setErrors(nextErrors);
 
-  if (Object.keys(nextErrors).length > 0) {
-    return;
-  }
-
-  try {
-    const response = await fetch("http://localhost:5000/api/contacts", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(form),
-    });
-
-    const data = await response.json();
-
-    if (!response.ok) {
-      throw new Error(data.message || "Failed to send message");
+    if (Object.keys(nextErrors).length > 0) {
+      return;
     }
 
-    setSubmitted(true);
-    setForm(initialForm);
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/contacts`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(form),
+        }
+      );
 
-  } catch (error) {
-    console.error("Contact form error:", error);
-    alert("Unable to send message. Please try again.");
-  }
-};
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Failed to send message");
+      }
+
+      setSubmitted(true);
+      setForm(initialForm);
+
+    } catch (error) {
+      console.error("Contact form error:", error);
+      alert("Unable to send message. Please try again.");
+    }
+  };
 
   if (submitted) {
     return (
