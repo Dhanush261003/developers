@@ -43,3 +43,11 @@ yarn-error.log*
 # =========================
 .DS_Store
 Thumbs.db
+# Root dependencies
+node_modules/
+
+# Client dependencies
+Client/node_modules/
+
+# Server dependencies
+Server/node_modules/
